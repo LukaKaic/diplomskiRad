@@ -1,0 +1,11 @@
+{
+  "host": "http://localhost:3000",
+  "dbURI":"mongodb://root:rootuser1@ds063168.mlab.com:63168/diplomskirad",
+  "sessionSecret": "catscanfly",
+  "fb": {
+    "clientID": "543845666163911",
+    "clientSecret": "242ceedbcf10b8864d01c144235b0f06",
+    "callbackURL": "http://localhost:3000/auth/facebook/callback",
+    "profileFields" : ["id", "displayName", "photos", "email"]
+  }
+}

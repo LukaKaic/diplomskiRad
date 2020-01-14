@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../public/css/custom.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+          rel="stylesheet">
+
+    <script>
+
+        $(document).ready(function(){
+            // click on button submit
+            $("#submit").on('click', function(){
+                console.log($("#form").serialize())
+                questionText = jQuery('input[name="questionText"]').val();
+                answerA = jQuery('input[name="answerTextA"]').val();
+                answerResultA = jQuery('input[name="answerResultA"]').val();
+                answerB = jQuery('input[name="answerTextB"]').val();
+                answerResultB = jQuery('input[name="answerResultB"]').val();
+                answerC = jQuery('input[name="answerTextC"]').val();
+                answerResultC = jQuery('input[name="answerResultC"]').val();
+                fullData = JSON.stringify({
+                    "questionText": questionText,
+                    "answers": [
+                        {
+                            "answerText": answerA,
+                            "answerResult": Number(answerResultA)
+                        },
+                        {
+                            "answerText": answerB,
+                            "answerResult": Number(answerResultB)
+                        },
+                        {
+                            "answerText": answerC,
+                            "answerResult": Number(answerResultC)
+                        }
+                    ]
+                })
+                // send ajax
+                $.ajax({
+                    url: 'http://localhost:3000/admin',
+                    contentType: 'application/json',
+                    type : "POST", // type of action POST || GET
+                    dataType : 'json', // data type
+                    data : fullData, // post data || get data
+                    success : function(result) {
+                        // you can see the result from the console
+                        // tab of the developer tools
+                        console.log(result);
+                    },
+                    error: function(xhr, resp, text) {
+                        console.log(xhr, resp, text);
+                    }
+                })
+            });
+        });
+
+    </script>
+
+<% include header.ejs %>
+<!--<form method="POST" action="/add" style="padding-bottom: 4rem">-->
+
+    <!--<div class="form-row needs-validation" novalidate>-->
+        <!--<div class="form-group col-md-4">-->
+            <!--<label for="exampleFormControlInput1">Please enter question</label>-->
+            <!--<input type="text" class="form-control" placeholder="Add question text" name="QuestionText" required/>-->
+        <!--</div>-->
+
+        <!--<div class="form-group col-md-8">-->
+            <!--<label for="exampleFormControlInput1">Please enter answer A</label>-->
+            <!--<input type="text" class="form-control"placeholder="Please add answer A to question" name="AnswerA" required/>-->
+        <!--</div><div class="form-group col-md-8">-->
+            <!--<label for="exampleFormControlInput1">Please enter answer A</label>-->
+            <!--<input type="text" class="form-control"placeholder="Please add answer B to question" name="AnswerB" required/>-->
+        <!--</div><div class="form-group col-md-8">-->
+            <!--<label for="exampleFormControlInput1">Please enter answer A</label>-->
+            <!--<input type="text" class="form-control"placeholder="Please add answer C to question" name="AnswerC" required/>-->
+        <!--</div>-->
+    <!--</div>-->
+
+<!--</form>-->
+
+    <form id="form" action="" method="post">
+        Pitanje: <input type="text" name="questionText"><br>
+        OdgovorA: <input type="text" name="answerTextA"><br>
+        Rezultat: <input type="text" name="answerResultA"><br>
+        OdgovorB: <input type="text" name="answerTextB"><br>
+        Rezultat: <input type="text" name="answerResultB"><br>
+        OdgovorA: <input type="text" name="answerTextC"><br>
+        Rezultat: <input type="text" name="answerResultC"><br>
+        <input id="submit" type="button" name="submit" value="submit">
+    </form>
