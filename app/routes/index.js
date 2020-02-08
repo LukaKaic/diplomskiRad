@@ -33,15 +33,23 @@ router.post('/home', function (req, res, next) {
 
     console.log(req.body.email);
 
+
     User.findOne({email: req.body.email})
         .exec(function (err, user) {
             if (err) {
                 return callback(err)
             } else if (user) {
                 console.log(user);
-                res.render('home', {
-                    user:user
-                })
+                if(req.body.password == user.password){
+                    res.render('home', {
+                        user:user
+                    })
+                } else {
+                    res.redirect('/')
+                }
+
+            } else {
+                res.redirect('/')
             }
 
         })
@@ -82,6 +90,7 @@ router.post('/register', function (req, res, next) {
             password: req.body.password,
             fullName: req.body.username
         };
+
 
 
         User.create(userData, function (err, user) {

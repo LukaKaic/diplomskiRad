@@ -487,6 +487,8 @@
             $(".zapocni").hide()
             $("#crta").show()
             $("#uvod").hide()
+            $("#finalSection").hide();
+            $('body').css("background-image", "")
 
             if(id == 2){
                 $("#scenario").show()
@@ -681,10 +683,6 @@
             } else {
                 $('#checkAnswerAlert').html("Hej! Prvo projveri odgovor pa odi na sljedeci :)").show()
             }
-
-
-
-
 
         }
 
@@ -886,7 +884,7 @@
     </div>
 
     <div class="container">
-        <div class="row">
+        <div class="row" style="padding-bottom: 2rem">
             <div class="col-10">
                 <button type="button" id="btnCheckAnswer" onclick="checkAnswer()" style="border: 0.5px solid gray" class="btn heartbeat">Projveri točnost odgovora</button>
             </div>
@@ -951,7 +949,7 @@
     <hr>
     <div class="row">
         <div class="col-12" style="text-align: center; margin-top: 2rem">
-            <button style="align-content: center" type="button"  onclick="startQuiz(0)" class="btn btn-success waves-effect waves-light btn-lg text-focus-in">Zaigraj ponovno<i class=" fi-check"></i></button>
+            <a href="/home" style="align-content: center"   class="btn btn-success waves-effect waves-light btn-lg text-focus-in">Zaigraj ponovno</a>
         </div>
     </div>
 </div>

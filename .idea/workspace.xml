@@ -2,144 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df659111-a70e-4c61-9db4-9fe7d311d1fb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-10.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-11.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-12.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-13.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-14.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-15.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-16.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-17.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-18.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-19.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-20.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-21.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-22.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-23.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-24.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-7.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-8.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/images/bg-9.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/application-minimal.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/login-style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/registration-style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/css/toolkit-minimal.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/alert.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/button.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/carousel.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/collapse.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/dropdown.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/modal.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/popover.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/scrollspy.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/tab.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/tooltip.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/bootstrap/util.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/affix.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/enter.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/image-grid.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/stage.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/custom/zoom.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/jquery.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/tether.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/js/toolkit.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/views/landing.ejs" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/Linearicons-Free-v1.0.0/WebFont/Linearicons-Free.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/Linearicons-Free-v1.0.0/icon-font.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/HELP-US-OUT.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/less/animated.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/less/bordered-pulled.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/less/core.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/less/fixed-width.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/less/font-awesome.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/less/icons.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/less/larger.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/less/list.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/less/mixins.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/less/path.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/less/rotated-flipped.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/less/screen-reader.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/less/stacked.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/less/variables.less" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/scss/_animated.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/scss/_bordered-pulled.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/scss/_core.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/scss/_fixed-width.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/scss/_icons.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/scss/_larger.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/scss/_list.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/scss/_mixins.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/scss/_path.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/scss/_rotated-flipped.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/scss/_screen-reader.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/scss/_stacked.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/scss/_variables.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/font-awesome-4.7.0/scss/font-awesome.scss" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-Black.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-BlackItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-BoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-ExtraBold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-ExtraBoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-ExtraLight.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-ExtraLightItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-Italic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-Light.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-LightItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-Medium.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-MediumItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-SemiBold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-SemiBoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-Thin.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/Montserrat-ThinItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/montserrat/OFL.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-Black.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-BlackItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-Bold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-BoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-ExtraBold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-ExtraBoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-ExtraLight.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-ExtraLightItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-Italic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-Light.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-LightItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-Medium.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-MediumItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-Regular.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-SemiBold.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-SemiBoldItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-Thin.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/fonts/poppins/Poppins-ThinItalic.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/public/js/master.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/quiz.ejs" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/controllerAdmin.js" afterPath="$PROJECT_DIR$/app/controllers/controllerAdmin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/controllerMain.js" afterPath="$PROJECT_DIR$/app/controllers/controllerMain.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/db/index.js" afterPath="$PROJECT_DIR$/app/db/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/db/questions.js" afterPath="$PROJECT_DIR$/app/db/questions.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/routes/index.js" afterPath="$PROJECT_DIR$/app/routes/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/main.css" afterPath="$PROJECT_DIR$/public/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/index.js" afterPath="$PROJECT_DIR$/public/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/main.js" afterPath="$PROJECT_DIR$/public/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/addQuestionsAnswers.ejs" afterPath="$PROJECT_DIR$/views/addQuestionsAnswers.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/header.ejs" afterPath="$PROJECT_DIR$/views/header.ejs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/home.ejs" afterPath="$PROJECT_DIR$/views/home.ejs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.ejs" afterPath="$PROJECT_DIR$/views/index.ejs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -153,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="home.ejs" pinned="false" current-in-tab="true">
+      <file leaf-file-name="home.ejs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/views/home.ejs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="546" column="20" lean-forward="true" selection-start-line="546" selection-start-column="20" selection-end-line="546" selection-end-column="20" />
+            <state relative-caret-position="1895">
+              <caret line="953" column="10" lean-forward="true" selection-start-line="953" selection-start-column="10" selection-end-line="953" selection-end-column="10" />
               <folding>
                 <element signature="e#5017#5100#0#HTML" expanded="false" />
                 <element signature="e#5149#5195#0#HTML" expanded="false" />
@@ -203,6 +69,7 @@
                 <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#2;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#2;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -210,6 +77,8 @@
                 <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#4;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#a#0;n#div#0;n#div#4;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -248,8 +117,18 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/routes/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="94" column="11" lean-forward="true" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
+            <state relative-caret-position="512">
+              <caret line="51" column="31" lean-forward="false" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -269,16 +148,6 @@
                 <element signature="n#style#0;n#input#2;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/db/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -349,6 +218,8 @@
       <find>vl</find>
       <find>user</find>
       <find>.vl</find>
+      <find>imageUrl = &quot;/images/bg-15.jpg&quot;</find>
+      <find>imageUrl</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -386,10 +257,11 @@
         <option value="$PROJECT_DIR$/app/controllers/controllerAdmin.js" />
         <option value="$PROJECT_DIR$/views/index.ejs" />
         <option value="$PROJECT_DIR$/views/header.ejs" />
-        <option value="$PROJECT_DIR$/views/home.ejs" />
         <option value="$PROJECT_DIR$/app/controllers/controllerMain.js" />
-        <option value="$PROJECT_DIR$/app/routes/index.js" />
         <option value="$PROJECT_DIR$/views/landing.ejs" />
+        <option value="$PROJECT_DIR$/views/home.ejs" />
+        <option value="$PROJECT_DIR$/app/routes/index.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -555,12 +427,12 @@
       <workItem from="1578866526361" duration="26768000" />
       <workItem from="1579562013297" duration="5983000" />
       <workItem from="1580044519774" duration="23183000" />
-      <workItem from="1580669147638" duration="22906000" />
+      <workItem from="1580669147638" duration="24782000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147910000" />
+    <option name="totallyTimeSpent" value="149786000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -602,7 +474,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/views/404.jade" />
     <entry file="file://$PROJECT_DIR$/views/index.jade" />
     <entry file="file://$PROJECT_DIR$/views/layout.jade" />
     <entry file="file://$PROJECT_DIR$/views/play.jade" />
@@ -663,6 +534,7 @@
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#2;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -670,6 +542,8 @@
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#4;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -949,14 +823,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/routes/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="94" column="11" lean-forward="true" selection-start-line="94" selection-start-column="11" selection-end-line="94" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/landing.ejs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1006">
@@ -975,8 +841,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/home.ejs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="546" column="20" lean-forward="true" selection-start-line="546" selection-start-column="20" selection-end-line="546" selection-end-column="20" />
+        <state relative-caret-position="1895">
+          <caret line="953" column="10" lean-forward="true" selection-start-line="953" selection-start-column="10" selection-end-line="953" selection-end-column="10" />
           <folding>
             <element signature="e#5017#5100#0#HTML" expanded="false" />
             <element signature="e#5149#5195#0#HTML" expanded="false" />
@@ -1022,6 +888,7 @@
             <element signature="n#style#0;n#span#0;n#div#0;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#div#3;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#2;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#2;n#div#4;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#button#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1029,7 +896,25 @@
             <element signature="n#style#0;n#h1#0;n#div#0;n#div#1;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#2;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#p#0;n#div#0;n#div#3;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#4;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#div#0;n#div#4;n#div#6;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/routes/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="512">
+          <caret line="51" column="31" lean-forward="false" selection-start-line="51" selection-start-column="31" selection-end-line="51" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
