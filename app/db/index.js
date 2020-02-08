@@ -2,17 +2,9 @@ var mongoose = require('mongoose');
 require('./users');
 require('./answers');
 require('./questions');
-//var dbURI = 'mongodb://testUserLocal:testUser@localhost:3000/zavrsni';
-// var dbURI = 'mongodb://root:root@ds137530.mlab.com:37530/multimedialibrary';
-var dbURI = 'mongodb://root:rootuser1@ds063168.mlab.com:63168/diplomskirad';
-//if (process.env.NODE_ENV === 'production'){
-//dbURI = 'mongodb://hgss:hgss123@127.0.0.1:27017/hgss';
-//}
 
-// Connect to the DB
-// if there is more db's:
-// var mainDB = mongoose.createConnection(dbURI);
-// mainDB.on('connected', ...)
+var dbURI = 'mongodb://root:rootuser1@ds063168.mlab.com:63168/diplomskirad';
+
 mongoose.connect(dbURI);
 
 

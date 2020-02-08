@@ -1,16 +1,3 @@
-html, body {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-}
-
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #222;
-}
-
 .custom-radios div {
     display: inline-block;
 }
@@ -55,4 +42,63 @@ body {
 }
 .custom-radios input[type="radio"]:checked + label span img {
     opacity: 1;
+}
+
+
+#flow1 {
+    visibility: visible;
+    height: 10rem;
+}
+
+#flow2 {
+    visibility: visible;
+    height: 10rem;
+}
+
+#flow3 {
+    visibility: visible;
+    height: 10rem;
+}
+
+#desktopFlow {
+    visibility: hidden;
+}
+
+#picWall1 {
+    margin-top: -15rem;
+}
+
+@media (min-width: 768px) {
+    #flow1 {
+        visibility: hidden;
+    }
+
+    #flow2 {
+        visibility: hidden;
+    }
+
+    #flow3 {
+        visibility: hidden;
+    }
+
+    #desktopFlow {
+        visibility: visible;
+        margin-right: 100px;
+    }
+    #flowDiv {
+        margin-top: -15rem;
+    }
+    #picWall1 {
+        margin-top: 2rem;
+    }
+}
+
+
+.font-100 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 100;
+}
+.font-300 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
 }

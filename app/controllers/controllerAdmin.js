@@ -9,15 +9,15 @@ var sendJSONresponse = function(res, status, content) {
 };
 
 module.exports.insertQuestion = function (req, res) {
-    checkNumberOfQuestions();
 
     Question.find({}, function result (err, result) {
         var lengthData = result.length;
     });
 
-    // console.log("broj" + numOfQuestions);
     var questionTextVar = req.body.questionText;
-    // var questionId = numOfQuestions + 1;
+    var questionExplanationVar = req.body.questionExplanation;
+    var switchVar = req.body.switchToSecondPart;
+
     var answersVar;
     var answersAll = [];
     for(var i= 0; i < req.body.answers.length; i++){
@@ -38,7 +38,9 @@ module.exports.insertQuestion = function (req, res) {
 
         questionText : questionTextVar,
         questionId : req.body.questionId,
-        answers: answersAll
+        answers: answersAll,
+        questionExplanation: questionExplanationVar,
+        switchToSecondPart: switchVar
 
     }, function (err, question) {
         if(err){
@@ -51,10 +53,4 @@ module.exports.insertQuestion = function (req, res) {
     });
 };
 
-function checkNumberOfQuestions(){
-
-
-
-
-};
 

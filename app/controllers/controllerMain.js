@@ -83,11 +83,10 @@ module.exports = {
         User.find({'_id' : req.body.userId}, function (err, user) {
             let reset = 0;
             User.updateOne(
-                {}, // Filter
+                {'_id' : req.body.userId}, // Filter
                 {"userRating": reset}// Update
             ) .then((obj) => {
-                console.log('Updated - ' + obj);
-                res.status(200).send((0).toString());
+                res.send("0");
             })
                 .catch((err) => {
                     console.log('Error: ' + err);
@@ -102,9 +101,13 @@ module.exports = {
         console.log(req.body.answerScore); //answerScore koji dodajem
         User.find({'_id' : req.body.userId}, function (err, user) {
             let userScore = Number (user[0].userRating);
+            console.log("userId :" + req.body.userId);
+            console.log("userId :" + user[0]);
+            console.log("userScore :" + userScore);
             userScore = Number(user[0].userRating) + Number(req.body.answerScore);
+            console.log(userScore);
             User.updateOne(
-                {}, // Filter
+                {'_id' : req.body.userId}, // Filter
                 {"userRating": userScore}// Update
             ) .then((obj) => {
                 console.log('Updated - ' + obj);
@@ -121,6 +124,7 @@ module.exports = {
         "use strict";
         console.log(req.body.userId); //userId da nadem usera kojem updateam score
         User.find({'_id' : req.body.userId}, function (err, user) {
+            console.log((user[0].userRating).toString());
             res.status(200).send((user[0].userRating).toString());
         })
 
@@ -128,13 +132,10 @@ module.exports = {
 
     checkAnswer : (req, res, next) => {
         "use strict";
-        //provjeri koliko bodova nosi odgovor
-        console.log(req.body.questionId);
         let answerId  = req.body.answerId;
 
         Question.find({'_id' : req.body.questionId}, function (err, result) {
             if (err) return handleError(err);
-            console.log();
             for ( let i = 0 ; i < result[0].answers.length  ; i ++ ) {
                 console.log(result[0].answers[i].answerId + " : " + answerId);
                 if(answerId == result[0].answers[i].answerId){
@@ -143,6 +144,5 @@ module.exports = {
                 }
             }
         })
-
     }
 };

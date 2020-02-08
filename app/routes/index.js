@@ -13,25 +13,42 @@ var User = mongoose.model('User');
 /* GET home page. */
 
 router.get('/', function (req, res, next) {
-    res.render('index');
+    res.render('landing');
 });
 
-router.get('/getsession', function (req, res, next) {
-    res.send('my favourite color ' + req.session.favcolor);
-});
 
-router.get('/setsession', function (req, res, next) {
-    req.session.favcolor = "Red";
-    res.send("Session set");
-});
-
-router.get('/home', [h.isAuthenticated], function (req, res, next) {
+router.get('/home', function (req, res, next) {
     res.render('home', {
         user: req.user
     });
 });
 
-router.post('/resetScore', [h.isAuthenticated], controllerMain.resetScore);
+router.post('/home', function (req, res, next) {
+
+
+    var userData = {
+        email: req.body.email,
+        password: req.body.password,
+    };
+
+    console.log(req.body.email);
+
+    User.findOne({email: req.body.email})
+        .exec(function (err, user) {
+            if (err) {
+                return callback(err)
+            } else if (user) {
+                console.log(user);
+                res.render('home', {
+                    user:user
+                })
+            }
+
+        })
+
+});
+
+router.post('/resetScore', controllerMain.resetScore);
 router.post('/updateScore', controllerMain.updateScore);
 router.post('/checkScore', controllerMain.checkScore);
 router.post('/checkAnswer', controllerMain.checkAnswer);
@@ -63,7 +80,7 @@ router.post('/register', function (req, res, next) {
             email: req.body.email,
             username: req.body.username,
             password: req.body.password,
-            passwordConf: req.body.passwordConf,
+            fullName: req.body.username
         };
 
 
@@ -71,8 +88,7 @@ router.post('/register', function (req, res, next) {
             if (err) {
                 return next(err);
             } else {
-                console.log(user._id);
-                res.render('quiz.ejs', {
+                res.render('home', {
                     user : user
                 })
             }
@@ -86,6 +102,7 @@ router.post('/login', function (req, res, next) {
         email: req.body.email,
         password: req.body.password,
     };
+
     console.log(req.body.email);
 
         User.findOne({email: req.body.email})
@@ -94,24 +111,12 @@ router.post('/login', function (req, res, next) {
                     return callback(err)
                 } else if (user) {
                     console.log(user);
-                    res.render('template.ejs', {
-                        user: user
+                    res.render('home', {
+                        user:user
                     })
-
                 }
+
             })
-})
-
-router.get('/login', function(req, res, next) {
-    var user = {name:'test'}; //!! find the user and check user from db then
-
-    var token = jwt.sign(user, 'secret', {
-        expiresInMinutes: 1440
-    });
-
-    res.cookie('auth',token);
-    res.send('ok');
-
 });
 
 

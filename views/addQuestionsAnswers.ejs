@@ -60,6 +60,15 @@
 
     </script>
 
+    <style>
+        body {
+            background-image: url('/images/bg-24.jpg');
+            background-repeat: no-repeat ;
+            background-size: cover;
+            background-position: center;
+        }
+    </style>
+
 <% include header.ejs %>
 <!--<form method="POST" action="/add" style="padding-bottom: 4rem">-->
 
@@ -84,12 +93,53 @@
 <!--</form>-->
 
     <form id="form" action="" method="post">
-        Pitanje: <input type="text" name="questionText"><br>
-        OdgovorA: <input type="text" name="answerTextA"><br>
-        Rezultat: <input type="text" name="answerResultA"><br>
-        OdgovorB: <input type="text" name="answerTextB"><br>
-        Rezultat: <input type="text" name="answerResultB"><br>
-        OdgovorA: <input type="text" name="answerTextC"><br>
-        Rezultat: <input type="text" name="answerResultC"><br>
-        <input id="submit" type="button" name="submit" value="submit">
+        <div class="form-group" style="text-align: center">
+                <div class="col-md-12">
+                    <label for="pitanje1" style="font-size: 1.5rem; font-weight: 300">Pitanje</label>
+                    <textarea type="text" class="form-control" id="pitanje1" name="questionText" rows="3"> </textarea>
+                </div>
+        </div>
+        <div class=" container form-group">
+            <div class="row">
+                <div class="col-md-10">
+                    <label for="odgovorA" style="font-size: 1rem; font-weight: 300">Odgovor A</label>
+                    <textarea type="text" class="form-control" id="odgovorA" name="answerTextA"> </textarea>
+                </div>
+                <div class="col-md-2">
+                    <label for="rezultatA" style="font-size: 1rem; font-weight: 300">Broj Bodova</label>
+                    <input type="text" class="form-control" id="rezultatA" name="answerResultA">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10">
+                    <label for="odgovorB" style="font-size: 1rem; font-weight: 300">Odgovor B</label>
+                    <textarea type="text" class="form-control" id="odgovorB" name="answerTextB"></textarea>
+                </div>
+                <div class="col-md-2">
+                    <label for="rezultatB" style="font-size: 1rem; font-weight: 300">Broj Bodova</label>
+                    <input type="text" class="form-control" id="rezultatB" name="answerResultB">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10">
+                    <label for="odgovorC" style="font-size: 1rem; font-weight: 300">Odgovor C</label>
+                    <textarea type="text" class="form-control" id="odgovorC" name="answerTextC"> </textarea>
+                </div>
+                <div class="col-md-2">
+                    <label for="rezultatC" style="font-size: 1rem; font-weight: 300">Broj Bodova</label>
+                    <input type="text" class="form-control" id="rezultatC" name="answerResultC">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="container" style="text-align: center">
+            <input id="submit" type="button" name="submit" class="btn btn-success btn-lg" value="Dodaj pitanje">
+        </div>
+
+
+
     </form>

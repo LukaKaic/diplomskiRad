@@ -2,19 +2,55 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link  href="../public/css/main.css" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="/assets/css/custom.css">
+    <link rel="stylesheet" href="css/custom.css">
     <title>Kviz globalnih projekata</title>
 </head>
+<style>
+    /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+    /* this chunk of css is not part of the toolkit :) */
+    /* …curses ios, etc… */
+    @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+        #navbar {
+
+            color: black;
+            font-size: 1rem;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        #textNav {
+            padding-top: 1rem;
+        }
+
+    }
+    @media (min-width: 768px) {
+
+        #navbar {
+            color: black;
+            font-size: 2rem;
+            text-align: center;
+
+        }
+    }
+
+
+</style>
+
 <body>
-<div class="page-wrapper" style="margin-top: 1rem">
-    <nav class="navbar ">
-        <span class="navbar-brand" ><a href="/">Kviz globalnih projekata</a></span>
-        <!--<a class="float-right" href="/add" title="Add a New Player">Admin</a>-->
-    </nav>
-</div>
-<hr>
+
+    <div class="container" id="navbar" style="margin-top: 0.5rem; text-align: center">
+        <div class="row">
+            <div class="col-12">
+                <span id="textNav"> Edukacijska igra o specifičnostima globalnih projekata </span>
+                <hr>
+            </div>
+        </div>
+    </div>
+
+
+
+

@@ -1,0 +1,66 @@
+.text{
+    margin-left: 10%;
+    font-weight: 300;
+}
+
+.box{
+    margin-left: 25%;
+}
+
+.text h1{
+    font-size: 70px;
+    color: #449d44;
+    font-weight: 500;
+}
+
+.text p{
+    font-size: 2rem;
+    color: #449d44;
+    font-weight: 300;
+}
+
+.text p a{
+    color: #449d44;
+    font-weight: 700;
+}
+
+.form{
+    background: transparent;
+    color: #449d44;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+}
+
+input{
+    margin: 20px 0;
+    padding: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #449d44;
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.5rem;
+}
+
+.email, .password{
+    border-bottom: 1px solid #449d44;
+}
+
+.button{
+    background: transparent;
+    border: 1px solid #449d44;
+    color: #449d44;
+    font-size: 1.4rem;
+}
+
+.button:hover{
+    background: #449d44;
+    color: #000;
+}
+
+.registrationLogin:hover{
+    color: #449d44;
+    cursor: pointer;
+}
