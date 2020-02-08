@@ -431,6 +431,8 @@
 
     <script type="text/javascript">
 
+        var baseURL = "https://diplomskirad.herokuapp.com/"
+
         var i = 0
         var counter = 1
         var checkAnswerControl = 0
@@ -452,7 +454,7 @@
                 type: 'POST',
                 data: JSON.stringify( { "userId":"<%=user._id%>"}),
                 contentType: 'application/json',
-                url: 'http://localhost:3000/resetScore',
+                url: baseURL + 'resetScore',
                 success: function(result) {
                     $('#score').html(result).css("font-size", "2rem");
                 }
@@ -467,7 +469,7 @@
             $.ajax({
                 type: 'GET',
                 contentType: 'application/json',
-                url: 'http://localhost:3000/logout',
+                url: baseURL + 'logout',
                 success: function(result) {
                 }
             });
@@ -500,7 +502,7 @@
                 type: 'POST',
                 data: JSON.stringify({ "userId":userId, "counter" : i }),
                 contentType: 'application/json',
-                url: 'http://localhost:3000/quiz',
+                url: baseURL + 'quiz',
                 success: function(result) {
                     console.log()
                     $('#question').html(result.result.questionText).addClass("focus-in-expand")
@@ -527,7 +529,7 @@
                 type: 'POST',
                 data: JSON.stringify({ "userId":"<%=user._id%>", "counter" : i }),
                 contentType: 'application/json',
-                url: 'http://localhost:3000/quiz',
+                url: baseURL + 'quiz',
                 success: function(result) {
                     let questionId = result.result._id;
                     console.log("answerId " + answerId);
@@ -539,7 +541,7 @@
                         type: 'POST',
                         data: JSON.stringify({ "questionId": questionId, "answerId" : answerId }),
                         contentType: 'application/json',
-                        url: 'http://localhost:3000/checkAnswer',
+                        url: baseURL + 'checkAnswer',
                         success: function(result) {
                             console.log(result)
                             $('#questionExplanationShow').html("Vaš odogovor Vam donosi : " + result.bold() +" bodova!" + "\n Pitisnite > za iduće pitanje").show().addClass("focus-in-expand")
@@ -554,7 +556,7 @@
                             type: 'POST',
                             data: JSON.stringify( { "userId":"<%=user._id%>", "answerScore" : answerScore }),
                             contentType: 'application/json',
-                            url: 'http://localhost:3000/updateScore',
+                            url: baseURL + 'updateScore',
                             success: function(result) {
                                 console.log("result of number" + result)
                                 $('#score').html(result).addClass("focus-in-expand").css("font-size", "2rem", "color", "green");
@@ -604,7 +606,7 @@
                     type: 'POST',
                     data: JSON.stringify({ "userId":"<%=user._id%>", "counter" : i }),
                     contentType: 'application/json',
-                    url: 'http://localhost:3000/quiz',
+                    url: baseURL + 'quiz',
                     success: function(result) {
 
                         console.log("result" + result.result);
@@ -620,7 +622,7 @@
                                 type: 'POST',
                                 data: JSON.stringify( { "userId":"<%=user._id%>" }),
                                 contentType: 'application/json',
-                                url: 'http://localhost:3000/checkScore',
+                                url: baseURL + 'checkScore',
                                 success: function(result) {
                                     console.log("result of number" + result)
                                     $('.finalScore').html(result).addClass("focus-in-expand");
@@ -663,7 +665,7 @@
                                 type: 'POST',
                                 data: JSON.stringify( { "userId":"<%=user._id%>" }),
                                 contentType: 'application/json',
-                                url: 'http://localhost:3000/checkScore',
+                                url: baseURL + 'checkScore',
                                 success: function(result) {
                                     console.log("result of number" + result)
                                     result = 150

@@ -33,7 +33,7 @@ app.use(function(req,res,next){
 //
 app.use(bodyParser.json({extend : false}));
 app.use(bodyParser.urlencoded({extend : false}));
-app.set('port', 3000);
+app.set('port', process.env.PORT || 3000);
 app.use(express.static('public'));
 app.set('view engine', 'ejs');
 app.use('/', routesApi);
