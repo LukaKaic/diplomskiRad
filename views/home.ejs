@@ -95,6 +95,22 @@
                 box-shadow: 0 0 4px 0px black;
                 margin-top: 0.3rem;
             }
+            #btnScenarioShow {
+                border: 0.5px solid gray;
+                justify-content: flex-end;
+                background-color: #f8f9fa;
+                color: #2ecc71;
+                box-shadow: 0 0 4px 0px black;
+                margin-top: 0.3rem;
+            }
+            #btnScenarioHide {
+                border: 0.5px solid gray;
+                justify-content: flex-end;
+                background-color: #f8f9fa;
+                color: #2ecc71;
+                box-shadow: 0 0 4px 0px black;
+                margin-top: 0.3rem;
+            }
 
             #scoreMain {
                 color: #2ecc71;
@@ -172,6 +188,22 @@
                 }
 
                 #btnCheckAnswer {
+                    border: 0.5px solid gray;
+                    justify-content: flex-end;
+                    background-color: #f8f9fa;
+                    color: #2ecc71;
+                    box-shadow: 0 0 4px 0px black;
+                    font-size: 1.3rem;
+                }
+                #btnScenarioHide {
+                    border: 0.5px solid gray;
+                    justify-content: flex-end;
+                    background-color: #f8f9fa;
+                    color: #2ecc71;
+                    box-shadow: 0 0 4px 0px black;
+                    font-size: 1.3rem;
+                }
+                #btnScenarioShow {
                     border: 0.5px solid gray;
                     justify-content: flex-end;
                     background-color: #f8f9fa;
@@ -432,11 +464,13 @@
     <script type="text/javascript">
 
         var baseURL = "https://diplomskirad.herokuapp.com/"
+        var testURL = "http://localhost:3000/"
 
         var i = 0
         var counter = 1
         var checkAnswerControl = 0
         var switchVar = 0
+        var scenarioShowButton = 0
 
         $(document).ready(() => {
 
@@ -449,6 +483,8 @@
             $("#secondSection").hide()
             $("#scenario").hide()
             counter = 1
+            $("#btnScenarioHide").hide()
+            $("#btnScenarioShow").hide()
 
             $.ajax({
                 type: 'POST',
@@ -495,7 +531,7 @@
             if(id == 2){
                 $("#scenario").show()
                 $("#secondSection").hide()
-
+                scenarioShowButton = 1
             }
 
             $.ajax({
@@ -594,6 +630,11 @@
             $('#questionExplanationShow').hide()
             $('#nextQuestion').hide()
 
+            if(scenarioShowButton == 1 ){
+                console.log('SceanrioShowButton = 1')
+                $('#btnScenarioShow').show();
+            }
+
             if(checkAnswerControl) {
                 imageUrl = "/images/bg-15.jpg"
 
@@ -632,7 +673,7 @@
                         }
 
                         else if (switchVar == 2) {
-                            console.log("usao");
+                            scenarioShowButton = 1
                             $('#scenario').show()
                             $('#secondSection').hide()
                             $('#question').html(result.result.questionText).addClass("focus-in-expand");
@@ -668,10 +709,35 @@
                                 url: baseURL + 'checkScore',
                                 success: function(result) {
                                     console.log("result of number" + result)
-                                    result = 150
-                                    $('.finalScore').html(result).addClass("focus-in-expand");
-                                    $('#rezDesc1').html("Ostvarili ste odličan rezultat!").addClass("focus-in-expand");
-                                    $('#rezDesc2').html("Bravo! Vi imate izvrsno znanje o globalnim projektima!").addClass("focus-in-expand");
+                                    if(result < 79) {
+                                        $('.finalScore').html(result).addClass("focus-in-expand");
+                                        $('#rezDesc1').html("Ostvarili ste nedovoljan rezultat!").addClass("focus-in-expand");
+                                        $('#rezDesc2').html("Bolje proučite specifičnosti globalnih projekata!").addClass("focus-in-expand");
+                                    }
+
+                                    if(result > 79 && result <=99 ) {
+                                        $('.finalScore').html(result).addClass("focus-in-expand");
+                                        $('#rezDesc1').html("Ostvarili ste dovoljan rezultat!").addClass("focus-in-expand");
+                                        $('#rezDesc2').html("Imate osnovna znanja ali to nije dovoljno za učinkoviti rad!").addClass("focus-in-expand");
+                                    }
+
+                                    if(result > 99 && result <= 119) {
+                                        $('.finalScore').html(result).addClass("focus-in-expand");
+                                        $('#rezDesc1').html("Ostvarili ste dobar rezultat!").addClass("focus-in-expand");
+                                        $('#rezDesc2').html("Snalazite se sa globalnim projektima ali trebate steći dodatna znanja i vještine!").addClass("focus-in-expand");
+                                    }
+
+                                    if(result > 119 & result < 139) {
+                                        $('.finalScore').html(result).addClass("focus-in-expand");
+                                        $('#rezDesc1').html("Ostvarili ste vrlo dobar rezultat!").addClass("focus-in-expand");
+                                        $('#rezDesc2').html("Vi imate vrlo dobro znanje o projektima koje možete dodatno proširiti da bi postali izvrsni!").addClass("focus-in-expand");
+                                    }
+
+                                    if(result > 140) {
+                                        $('.finalScore').html(result).addClass("focus-in-expand");
+                                        $('#rezDesc1').html("Ostvarili ste odličan rezultat!").addClass("focus-in-expand");
+                                        $('#rezDesc2').html("Bravo! Vi imate izvrsno znanje o globalnim projektima!").addClass("focus-in-expand");
+                                    }
 
                                 }
                             });
@@ -683,11 +749,34 @@
                 });
 
             } else {
-                $('#checkAnswerAlert').html("Hej! Prvo projveri odgovor pa odi na sljedeci :)").show()
+                $('#checkAnswerAlert').html("Prvo provjerite točnost odgovora!").show()
             }
 
         }
 
+        function showScenario() {
+
+            $('#scenario').show()
+            $('#btnScenarioShow').hide()
+            $('#btnScenarioHide').show()
+
+
+        }
+
+        function hideScenario() {
+
+            $('#scenario').hide()
+            $('#btnScenarioShow').show()
+            $('#btnScenarioHide').hide()
+
+
+        }
+
+        function startAgain() {
+
+                location.reload();
+
+        }
 
     </script>
 
@@ -790,6 +879,7 @@
             </p>
         </div>
     </div>
+    <button type="button" id="btnScenarioHide" onclick="hideScenario()" class="btn">Sakrij opisni scenarij</button>
     <hr>
 </div>
 
@@ -802,8 +892,6 @@
         </div>
     </div>
 </div>
-
-
 
 
 <div class="container" id="questionBlock">
@@ -898,6 +986,11 @@
                     </i></button>
             </div>
         </div>
+        <div class="row" style="padding-bottom: 2rem">
+            <div class="col-4">
+                <button type="button" id="btnScenarioShow" onclick="showScenario()" class="btn">Prikaži opisni scenarij</button>
+            </div>
+        </div>
     </div>
 
 </div>
@@ -951,7 +1044,7 @@
     <hr>
     <div class="row">
         <div class="col-12" style="text-align: center; margin-top: 2rem">
-            <a href="/home" style="align-content: center"   class="btn btn-success waves-effect waves-light btn-lg text-focus-in">Zaigraj ponovno</a>
+            <button onclick="startAgain()" style="align-content: center"   class="btn btn-success waves-effect waves-light btn-lg text-focus-in">Zaigraj ponovno</button>
         </div>
     </div>
 </div>

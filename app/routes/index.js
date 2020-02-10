@@ -23,6 +23,22 @@ router.get('/home', function (req, res, next) {
     });
 });
 
+router.get('/newGame', function (req, res, next) {
+
+    User.findOne({email: req.body.email})
+        .exec(function (err, user) {
+            if (err) {
+                return callback(err)
+            } else if (user) {
+                console.log(user);
+                res.render('home', {
+                    user: user
+                })
+            }
+        })
+
+});
+
 router.post('/home', function (req, res, next) {
 
 

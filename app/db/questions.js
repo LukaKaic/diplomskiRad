@@ -7,7 +7,8 @@ var questionSchema = new mongoose.Schema({
         answerResult : {type : Number},
         answerId : {type : Number},
     }],
-    questionExplanation : {type : String}
+    questionExplanation : {type : String},
+    switchToSecondPart: {type : String, default : "False"}
 });
 
 module.exports = mongoose.model('Question', questionSchema);
