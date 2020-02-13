@@ -260,11 +260,11 @@
             }
 
             .custom-radios input[type="radio"]#color-1 + label span {
-                background-color: #2ecc71;
+                background-color: #3498db;
             }
 
             .custom-radios input[type="radio"]#color-2 + label span {
-                background-color: #3498db;
+                background-color: #2ecc71;
             }
 
             .custom-radios input[type="radio"]#color-3 + label span {
@@ -275,8 +275,9 @@
                 background-color: #e74c3c;
             }
 
-            .custom-radios input[type="radio"]:checked + label span img {
+            .custom-radios input[type="radio"]:checked + label span {
                 opacity: 1;
+                border: dotted 0.4rem;
             }
 
             .focus-in-expand {
@@ -552,6 +553,8 @@
 
         function checkAnswer() {
 
+            $("#btnCheckAnswer").attr("disabled", true)
+
             checkAnswerControl = 1
             $('#checkAnswerAlert').hide()
             $('#btnCheckAnswer').removeClass("heartbeat");
@@ -613,6 +616,8 @@
 
         function nextQuestion() {
 
+            $("#btnCheckAnswer").attr("disabled", false)
+
             console.log("SwitchVar" + switchVar)
 
             $('#question').removeClass("focus-in-expand");
@@ -636,7 +641,7 @@
             }
 
             if(checkAnswerControl) {
-                imageUrl = "/images/bg-15.jpg"
+                imageUrl = "/images/bg-15-min.jpg"
 
                 checkAnswerControl = 0
                 i++
@@ -818,7 +823,7 @@
     <div class="row uvod" style="padding-left: 1.5rem">
         <div class="col-md-12">
             <p id="welcomeText">
-                Kako bi provjerili Vaše znanje o globalnim projektima, započnite kratki edukacijski kviz. Kviz se sastoji od <span class="greenText">7</span> pitanja.
+                Kako bi provjerili Vaše znanje o globalnim projektima, započnite kratki edukacijski kviz. Kviz se sastoji od <span class="greenText">7</span> pitanja. Nakon završetka edukacijskog kviza o globalnim projektima općenito, pokrenite studijski primjer globalnog projekta koji se sastoji od <span class="greenText">9</span> pitanja. Igra se ukupno sastoji od <span class="greenText"> 16 </span> pitanja.
             </p>
         </div>
     </div>
@@ -911,10 +916,9 @@
     <div class="custom-radios" id="customRadios">
         <div class="row">
             <div class="col-1">
-                <input type="radio" id="color-1" name="answer" value="1" checked>
+                <input type="radio" id="color-1" name="answer" value="1" >
                 <label for="color-1">
       <span>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
       </span>
                 </label>
             </div>
@@ -932,7 +936,6 @@
                 <input type="radio" id="color-2" name="answer" value="2">
                 <label for="color-2">
       <span>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
       </span>
                 </label>
             </div>
@@ -949,7 +952,6 @@
                 <input type="radio"  id="color-3" name="answer" value="3">
                 <label for="color-3">
       <span>
-        <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/check-icn.svg" alt="Checked Icon" />
       </span>
                 </label>
             </div>
@@ -976,7 +978,7 @@
     <div class="container">
         <div class="row" style="padding-bottom: 2rem">
             <div class="col-10">
-                <button type="button" id="btnCheckAnswer" onclick="checkAnswer()" style="border: 0.5px solid gray" class="btn heartbeat">Projveri točnost odgovora</button>
+                <button type="button" id="btnCheckAnswer" onclick="checkAnswer()" style="border: 0.5px solid gray" class="btn heartbeat">Provjeri točnost odgovora</button>
             </div>
 
             <div class="col-2">

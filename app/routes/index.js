@@ -80,7 +80,22 @@ router.post('/checkAnswer', controllerMain.checkAnswer);
 router.post('/quiz', controllerMain.getQuiz);
 // router.get('/quiz/:id', controllerMain.getQuizById);
 router.get('/admin', function (req, res) {
-   res.render('addQuestionsAnswers.ejs');
+   res.render('landingAdmin.ejs');
+});
+
+router.post('/adminLogin', function (req, res, next) {
+
+   let username = req.body.username;
+   let password = req.body.password;
+
+   console.log(username + " plus " + password)
+
+   if(username == 'root' && password == 'root'){
+       res.render('addQuestionsAnswers.ejs')
+   } else {
+       res.redirect('/admin')
+   }
+
 });
 router.post('/admin', controllerAdmin.insertQuestion);
 

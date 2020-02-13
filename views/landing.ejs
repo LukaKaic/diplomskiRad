@@ -77,7 +77,10 @@
                 font-family:'Montserrat', sans-serif;
                 font-size: 15px;
                 color: white;
+            }
 
+            input[type=text] {
+                color:white
             }
 
         }
@@ -104,6 +107,14 @@
                 font-weight: 300;
                 font-size: 2rem;
                 color: black
+            }
+
+            .registrationLogin{
+                font-family:'Montserrat', sans-serif;
+                font-size: 25px;
+                color: black;
+                text-align: center;
+
             }
         }
 
@@ -136,7 +147,7 @@
 
 <style>
     body{
-        background-image: url('/images/bg-9.jpg');
+        background-image: url('/images/bg-9-min.jpg');
         background-repeat: no-repeat ;
         background-size: cover;
         background-position: top;
@@ -182,9 +193,9 @@
             </div>
         </div>
 
-        <div class="col-sm-6" id="login" style="margin-top: 50px">
-            <div class=" app-translate-5" data-transition="entrance">
-                    <div class="box">
+        <div class="col-6" id="login" style="margin-top: 50px">
+            <div class="app-translate-5" data-transition="entrance">
+                    <div class="box" style="text-align: center">
                         <form action="/home" method="POST" class="form">
                             <input type="text" class="email" name="email" placeholder="e-mail" required style="color: black">
                             <input type="password" class="password" name="password" placeholder="lozinka" required>
@@ -194,9 +205,9 @@
                 </div>
             </div>
         </div>
-        <div class="col-sm-6" id="registration" style="margin-top: 50px">
-            <div class=" app-translate-5" data-transition="entrance">
-                    <div class="box">
+        <div class="col-6" id="registration" style="margin-top: 50px">
+            <div class="app-translate-5" data-transition="entrance">
+                    <div class="box" style="text-align: center">
                         <form action="/register" method="POST" class="form">
                             <input type="text" class="email" name="email" placeholder="e-mail" required>
                             <input type="text" class="email" name="username" placeholder="korisničko ime" required>
