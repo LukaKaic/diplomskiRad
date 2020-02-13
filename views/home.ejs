@@ -616,7 +616,10 @@
 
         function nextQuestion() {
 
-            $("#btnCheckAnswer").attr("disabled", false)
+            $("#btnCheckAnswer").prop("disabled", false)
+            $("#color-1").prop("checked", true);
+            $("#color-2").prop("checked", false);
+            $("#color-3").prop("checked", false);
 
             console.log("SwitchVar" + switchVar)
 
@@ -779,7 +782,7 @@
 
         function startAgain() {
 
-                location.reload();
+            location.reload();
 
         }
 
@@ -916,7 +919,7 @@
     <div class="custom-radios" id="customRadios">
         <div class="row">
             <div class="col-1">
-                <input type="radio" id="color-1" name="answer" value="1" >
+                <input type="radio" id="color-1" name="answer" value="1" checked>
                 <label for="color-1">
       <span>
       </span>

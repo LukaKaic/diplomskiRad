@@ -9,6 +9,111 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet">
 
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="css/toolkit-minimal.css" rel="stylesheet">
+    <link href="css/application-minimal.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/login-style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cardo|Lato|Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,300,500" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:100,300,400,700" rel="stylesheet">
+    <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:300,400,700&display=swap" rel="stylesheet">
+
+    <style>
+        /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+        /* this chunk of css is not part of the toolkit :) */
+        /* …curses ios, etc… */
+        @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+            #stage {
+                height: 1px;
+                overflow: auto;
+                min-height: 100vh;
+                -webkit-overflow-scrolling: touch;
+            }
+            #mainTitle {
+                font-size: 2.5rem;
+                font-weight: 100;font-family: 'Montserrat', sans-serif;
+                padding-top: 20px
+            }
+            #mainText{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
+                padding-top: 20px;
+                font-size: 1.3rem;
+            }
+            .greenTitle {
+                font-size: 1.5rem;
+                font-weight: bold;
+                color: #2ecc71
+            }
+            #joinOverFacebook {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
+                font-size: 1.3rem;
+                color: white
+
+            }
+            #auth {
+                padding-bottom: 50rem;
+            }
+            ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+                color: white;
+                opacity: 1; /* Firefox */
+            }
+            .registrationLogin{
+                font-family:'Montserrat', sans-serif;
+                font-size: 15px;
+                color: white;
+            }
+
+            input[type=text] {
+                color:white
+            }
+
+        }
+        @media (min-width: 768px) {
+
+            .greenTitle {
+                font-size: 3.2rem;
+                font-weight: bold;
+                color: #2ecc71
+            }
+            #mainText{
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
+                padding-top: 50px;
+                font-size: 2rem;
+            }
+            #mainTitle {
+                font-size: 5rem;
+                font-weight: 100;font-family: 'Montserrat', sans-serif;
+                padding-top: 50px
+            }
+            #joinOverFacebook {
+                font-family: 'Montserrat', sans-serif;
+                font-weight: 300;
+                font-size: 2rem;
+                color: black
+            }
+
+            .registrationLogin{
+                font-family:'Montserrat', sans-serif;
+                font-size: 25px;
+                color: black;
+                text-align: center;
+
+            }
+        }
+
+    </style>
+
     <style>
         body {
             background-image: url('/images/bg-24-min.jpg');
@@ -20,9 +125,10 @@
 
     <% include header.ejs %>
 
-    <div class="col-6" id="login" style="margin-top: 50px">
+<div class="container">
+    <div class="col-12" id="login" style="margin-top: 50px;text-align: left">
         <div class="app-translate-5" data-transition="entrance">
-            <div class="box" style="text-align: center">
+            <div class="block" style="background-color: transparent; font-size: 2rem;">
                 <form action="/adminLogin" method="POST" class="form">
                     <input type="text" class="admin" name="username" placeholder="korisničko ime" required style="color: black">
                     <input type="password" class="password" name="password" placeholder="lozinka" required>
@@ -31,7 +137,7 @@
             </div>
         </div>
     </div>
+</div>
 
 
 
-    </form>
